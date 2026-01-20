@@ -6,7 +6,7 @@ if a file was added:
 
 to make a commit / save point:
 
-`git commit -am'usefull message here'`
+`git commit -am'useful message here'`
 
 to push/upload:
 
