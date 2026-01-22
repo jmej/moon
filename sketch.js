@@ -6,6 +6,7 @@ function setup() {
 
 function draw() {
   background(0);
+  lights();
   phaseAnimation += 0.1;
   phaseAnimation = phaseAnimation % 30;
   for(let i = 0; i < 30; i++){
@@ -23,6 +24,7 @@ function drawMoon(phase, h) { //phase 0-30
   let xLoc = map(phase, 0, 30, -width/3, width/3);
   console.log(xLoc);
   push();
+  noStroke();
   translate(xLoc, h, 0);
   sphere(50, 6, 6);
   pop();
